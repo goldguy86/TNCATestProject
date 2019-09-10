@@ -26,7 +26,7 @@ public class SeleniumBase  {
 	{
 		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://newubinseafood.e-attendance.net");
+		driver.get("http://121.6.182.165");
 		//Thread.sleep(3000);	
 	}
 	

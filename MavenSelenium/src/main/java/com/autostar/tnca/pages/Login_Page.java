@@ -23,7 +23,7 @@ public class Login_Page extends SeleniumBase {
 
 	public Master_Page login() {
 		
-		EnterText(UserName, "Admin");
+		EnterText(UserName, "Bdmin");
 		EnterText(Password, "password1");
 		click(Submit);
 		System.out.println("After Sumbit");
@@ -44,7 +44,7 @@ public class Login_Page extends SeleniumBase {
 	
 	public void verifyUserNameAndPasswordGiven() {
 		click(Submit);
-		assertEquals(getTextt(errorMessage), "Please enter Login name and Password.");
+		assertEquals(getTextt(errorMessage), "Please enter login name and password.");
 
 	}
 }

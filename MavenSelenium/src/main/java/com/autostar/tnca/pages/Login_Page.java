@@ -34,17 +34,17 @@ public class Login_Page extends SeleniumBase {
 	public void verifyUserNameGiven() {
 		EnterText(Password, "password1");
 		click(Submit);
-		assertEquals(getText(errorMessage), "Please enter Login Name");
+		assertEquals(getTextt(errorMessage), "Please enter Login Name");
 	}
 	public void verifyPasswordGiven() {
 		EnterText(UserName, "Admin");
 		click(Submit);
-		assertEquals(getText(errorMessage), "Please enter Password");
+		assertEquals(getTextt(errorMessage), "Please enter Password");
 	}
 	
 	public void verifyUserNameAndPasswordGiven() {
 		click(Submit);
-		assertEquals(getText(errorMessage), "Please enter Login name and Password.");
+		assertEquals(getTextt(errorMessage), "Please enter Login name and Password.");
 
 	}
 }

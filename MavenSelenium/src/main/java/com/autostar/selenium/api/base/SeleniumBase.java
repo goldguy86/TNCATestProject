@@ -26,7 +26,7 @@ public class SeleniumBase  {
 	{
 		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://autostar.e-attendance.net");
+		driver.get("http://newubinseafood.e-attendance.net");
 		//Thread.sleep(3000);	
 	}
 	
@@ -44,8 +44,9 @@ public class SeleniumBase  {
 		System.out.println("Entering Text");
 	}
 	
-	public String getText(WebElement ele) {
+	public String getTextt(WebElement ele) {
 		
+		System.out.println("i am called");
 		return ele.getText();
 	}
 

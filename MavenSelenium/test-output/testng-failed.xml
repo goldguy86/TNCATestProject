@@ -3,16 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.autostar.tnca.testcases.Login_Test">
+      <class name="com.autostar.tnca.testcases.Master_Test">
         <methods>
-          <include name="ifNoPasswordGiven"/>
-          <include name="ifNoUserNameGiven"/>
-          <include name="ifNoUserNameAndPasswordGiven"/>
           <include name="launchURL"/>
           <include name="CloseBrowser"/>
-          <include name="ifInvalidUsername"/>
+          <include name="verifyDateAndTime"/>
         </methods>
-      </class> <!-- com.autostar.tnca.testcases.Login_Test -->
+      </class> <!-- com.autostar.tnca.testcases.Master_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

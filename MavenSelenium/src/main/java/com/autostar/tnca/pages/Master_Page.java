@@ -16,21 +16,26 @@ public class Master_Page extends SeleniumBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//a[@title='Go to Homepage']") WebElement MasterPageName;
-	@FindBy(xpath="//p[@id='timeval']") WebElement DateAndTime;
-	
+	@FindBy(xpath="//a[@title='Go to Homepage']") 
+	WebElement MasterPageName;
+	@FindBy(xpath="//p[@id='timeval']")
+	WebElement FullDateAndTime;
 	
 
 public void verifyLoginSuccessful()
 {
-	assertEquals(getText(MasterPageName), "TNC Accelerator");
+	assertEquals(getTextt(MasterPageName), "TNCHOME");
 	
 	}
 
 public void verifyDateTime() 
 
        {
-	
+	new Login_Page().login();
+	String dateAndTime = getTextt(FullDateAndTime);
+	System.out.println(dateAndTime);
+	System.out.println("Missing DateAndTime");
+	assertEquals(dateAndTime, "TNC Accelerator");
        }
   
 	

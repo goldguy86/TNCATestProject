@@ -17,6 +17,8 @@ public class Master_Page extends SeleniumBase {
 	}
 	
 	@FindBy(xpath="//a[@title='Go to Homepage']") WebElement MasterPageName;
+	@FindBy(xpath="//p[@id='timeval']") WebElement DateAndTime;
+	
 	
 
 public void verifyLoginSuccessful()
@@ -24,5 +26,12 @@ public void verifyLoginSuccessful()
 	assertEquals(getText(MasterPageName), "TNC Accelerator");
 	
 	}
+
+public void verifyDateTime() 
+
+       {
+	
+       }
+  
 	
 }

@@ -1,5 +1,4 @@
 package com.autostar.selenium.api.base;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,7 +26,7 @@ public class SeleniumBase  {
 	{
 		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://newubinseafood.e-attendance.net");
+		driver.get("http://autostar.e-attendance.net");
 		//Thread.sleep(3000);	
 	}
 	

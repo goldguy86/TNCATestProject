@@ -7,12 +7,14 @@ import com.autostar.tnca.pages.Login_Page;
 
 public class Login_Test extends SeleniumBase {
 	
+	public static Login_Page initPageElements;
+	
 	
 	@Test
 	public void verifyLoginSuccessfull() {
 		
-		new Login_Page();
-		//new Login_Page().login();
+		initPageElements=new Login_Page();
+		initPageElements.login();
 	
 	}
 
@@ -32,6 +34,13 @@ public class Login_Test extends SeleniumBase {
 	
 	@Test
 	public void ifNoUserNameAndPasswordGiven() {
+		
+	new Login_Page().verifyUserNameAndPasswordGiven();
+	
+	}
+	
+	@Test
+	public void ifInvalidUsername() {
 		
 	new Login_Page().verifyUserNameAndPasswordGiven();
 	

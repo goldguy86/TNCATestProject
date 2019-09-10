@@ -1,17 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+<testng-results skipped="0" failed="4" ignored="0" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-09-09T22:07:33 SGT" name="Default suite" finished-at="2019-09-09T22:07:45 SGT" duration-ms="12060">
+  <suite name="Default suite" duration-ms="28658" started-at="2019-09-10T10:47:56 SGT" finished-at="2019-09-10T10:48:25 SGT">
     <groups>
     </groups>
-    <test started-at="2019-09-09T22:07:33 SGT" name="Default test" finished-at="2019-09-09T22:07:45 SGT" duration-ms="12060">
+    <test name="Default test" duration-ms="28658" started-at="2019-09-10T10:47:56 SGT" finished-at="2019-09-10T10:48:25 SGT">
       <class name="com.autostar.tnca.testcases.Login_Test">
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@43ee72e6]" started-at="2019-09-09T22:07:33 SGT" name="launchURL" finished-at="2019-09-09T22:07:36 SGT" duration-ms="2893" status="PASS">
+        <test-method status="PASS" signature="launchURL()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="launchURL" is-config="true" duration-ms="6964" started-at="2019-09-10T10:47:56 SGT" finished-at="2019-09-10T10:48:03 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method signature="ifNoPasswordGiven()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@43ee72e6]" started-at="2019-09-09T22:07:36 SGT" name="ifNoPasswordGiven" finished-at="2019-09-09T22:07:36 SGT" duration-ms="544" status="FAIL">
+        <test-method status="FAIL" signature="ifInvalidUsername()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="ifInvalidUsername" duration-ms="1404" started-at="2019-09-10T10:48:03 SGT" finished-at="2019-09-10T10:48:04 SGT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please enter Login name and Password.] but found [Please enter login name and password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please enter Login name and Password.] but found [Please enter login name and password.]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.autostar.tnca.pages.Login_Page.verifyUserNameAndPasswordGiven(Login_Page.java:47)
+at com.autostar.tnca.testcases.Login_Test.ifInvalidUsername(Login_Test.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ifInvalidUsername -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="CloseBrowser" is-config="true" duration-ms="124" started-at="2019-09-10T10:48:04 SGT" finished-at="2019-09-10T10:48:05 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method status="PASS" signature="launchURL()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="launchURL" is-config="true" duration-ms="3901" started-at="2019-09-10T10:48:05 SGT" finished-at="2019-09-10T10:48:08 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method status="FAIL" signature="ifNoPasswordGiven()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="ifNoPasswordGiven" duration-ms="560" started-at="2019-09-10T10:48:08 SGT" finished-at="2019-09-10T10:48:09 SGT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Please enter Password] but found [Please enter login name and password.]]]>
@@ -24,11 +80,11 @@ at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
 at org.testng.Assert.assertEquals(Assert.java:585)
 at com.autostar.tnca.pages.Login_Page.verifyPasswordGiven(Login_Page.java:42)
-at com.autostar.tnca.testcases.Login_Test.ifNoPasswordGiven(Login_Test.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at com.autostar.tnca.testcases.Login_Test.ifNoPasswordGiven(Login_Test.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
@@ -37,7 +93,7 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:770)
 at org.testng.TestRunner.run(TestRunner.java:591)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
@@ -59,15 +115,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ifNoPasswordGiven -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@43ee72e6]" started-at="2019-09-09T22:07:36 SGT" name="CloseBrowser" finished-at="2019-09-09T22:07:36 SGT" duration-ms="36" status="PASS">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="CloseBrowser" is-config="true" duration-ms="55" started-at="2019-09-10T10:48:09 SGT" finished-at="2019-09-10T10:48:09 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@43ee72e6]" started-at="2019-09-09T22:07:36 SGT" name="launchURL" finished-at="2019-09-09T22:07:39 SGT" duration-ms="2485" status="PASS">
+        <test-method status="PASS" signature="launchURL()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="launchURL" is-config="true" duration-ms="3423" started-at="2019-09-10T10:48:09 SGT" finished-at="2019-09-10T10:48:13 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method signature="ifNoUserNameAndPasswordGiven()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@43ee72e6]" started-at="2019-09-09T22:07:39 SGT" name="ifNoUserNameAndPasswordGiven" finished-at="2019-09-09T22:07:39 SGT" duration-ms="578" status="FAIL">
+        <test-method status="FAIL" signature="ifNoUserNameAndPasswordGiven()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="ifNoUserNameAndPasswordGiven" duration-ms="1194" started-at="2019-09-10T10:48:13 SGT" finished-at="2019-09-10T10:48:14 SGT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Please enter Login name and Password.] but found [Please enter login name and password.]]]>
@@ -80,11 +136,11 @@ at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
 at org.testng.Assert.assertEquals(Assert.java:585)
 at com.autostar.tnca.pages.Login_Page.verifyUserNameAndPasswordGiven(Login_Page.java:47)
-at com.autostar.tnca.testcases.Login_Test.ifNoUserNameAndPasswordGiven(Login_Test.java:36)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at com.autostar.tnca.testcases.Login_Test.ifNoUserNameAndPasswordGiven(Login_Test.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
@@ -93,7 +149,7 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:770)
 at org.testng.TestRunner.run(TestRunner.java:591)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
@@ -115,15 +171,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ifNoUserNameAndPasswordGiven -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@43ee72e6]" started-at="2019-09-09T22:07:39 SGT" name="CloseBrowser" finished-at="2019-09-09T22:07:39 SGT" duration-ms="29" status="PASS">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="CloseBrowser" is-config="true" duration-ms="222" started-at="2019-09-10T10:48:14 SGT" finished-at="2019-09-10T10:48:14 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@43ee72e6]" started-at="2019-09-09T22:07:39 SGT" name="launchURL" finished-at="2019-09-09T22:07:42 SGT" duration-ms="2462" status="PASS">
+        <test-method status="PASS" signature="launchURL()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="launchURL" is-config="true" duration-ms="4846" started-at="2019-09-10T10:48:14 SGT" finished-at="2019-09-10T10:48:19 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method signature="ifNoUserNameGiven()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@43ee72e6]" started-at="2019-09-09T22:07:42 SGT" name="ifNoUserNameGiven" finished-at="2019-09-09T22:07:42 SGT" duration-ms="558" status="FAIL">
+        <test-method status="FAIL" signature="ifNoUserNameGiven()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="ifNoUserNameGiven" duration-ms="714" started-at="2019-09-10T10:48:19 SGT" finished-at="2019-09-10T10:48:20 SGT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Please enter Login Name] but found [Please enter login name and password.]]]>
@@ -136,11 +192,11 @@ at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
 at org.testng.Assert.assertEquals(Assert.java:585)
 at com.autostar.tnca.pages.Login_Page.verifyUserNameGiven(Login_Page.java:37)
-at com.autostar.tnca.testcases.Login_Test.ifNoUserNameGiven(Login_Test.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at com.autostar.tnca.testcases.Login_Test.ifNoUserNameGiven(Login_Test.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
@@ -149,7 +205,7 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:770)
 at org.testng.TestRunner.run(TestRunner.java:591)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
@@ -171,19 +227,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ifNoUserNameGiven -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@43ee72e6]" started-at="2019-09-09T22:07:42 SGT" name="CloseBrowser" finished-at="2019-09-09T22:07:42 SGT" duration-ms="29" status="PASS">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="CloseBrowser" is-config="true" duration-ms="94" started-at="2019-09-10T10:48:20 SGT" finished-at="2019-09-10T10:48:20 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@43ee72e6]" started-at="2019-09-09T22:07:42 SGT" name="launchURL" finished-at="2019-09-09T22:07:45 SGT" duration-ms="2369" status="PASS">
+        <test-method status="PASS" signature="launchURL()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="launchURL" is-config="true" duration-ms="4278" started-at="2019-09-10T10:48:20 SGT" finished-at="2019-09-10T10:48:24 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method signature="verifyLoginSuccessfull()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@43ee72e6]" started-at="2019-09-09T22:07:45 SGT" name="verifyLoginSuccessfull" finished-at="2019-09-09T22:07:45 SGT" duration-ms="2" status="PASS">
+        <test-method status="PASS" signature="verifyLoginSuccessfull()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="verifyLoginSuccessfull" duration-ms="629" started-at="2019-09-10T10:48:24 SGT" finished-at="2019-09-10T10:48:25 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginSuccessfull -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@43ee72e6]" started-at="2019-09-09T22:07:45 SGT" name="CloseBrowser" finished-at="2019-09-09T22:07:45 SGT" duration-ms="46" status="PASS">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.autostar.tnca.testcases.Login_Test@610694f1]" name="CloseBrowser" is-config="true" duration-ms="184" started-at="2019-09-10T10:48:25 SGT" finished-at="2019-09-10T10:48:25 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->

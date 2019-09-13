@@ -2,7 +2,6 @@ package com.autostar.tnca.pages;
 
 import static org.testng.Assert.assertEquals;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -25,6 +24,8 @@ public class Master_Page extends SeleniumBase {
 	WebElement MasterPageName;
 	@FindBy(xpath="//p[@id='timeval']")
 	WebElement FullDateAndTime;
+	@FindBy(xpath="//li[@id='usermanagement']")
+	WebElement UserManagement;
 	
 	
 	public Master_Page verifyServerDate() throws InterruptedException
@@ -51,6 +52,13 @@ public class Master_Page extends SeleniumBase {
 		//System.out.println("Ajax Call Performed");
 		return this;
 	}
+	
+	
+public Add_New_User_Page clickUserManagement(){
+		
+		click(UserManagement);
+		return new Add_New_User_Page();
+}
 	
 
 public void verifyLoginSuccessful()

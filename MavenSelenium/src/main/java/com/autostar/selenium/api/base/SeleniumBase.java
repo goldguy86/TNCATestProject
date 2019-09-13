@@ -11,7 +11,7 @@ public class SeleniumBase  {
 	public static WebDriver driver;
 	public static WebDriverWait wait;
 	
-	private String URL = "http://121.6.182.165";
+	private String URL = "http://thangayaazhine.ddns.net";
 	
 	
 	@BeforeMethod

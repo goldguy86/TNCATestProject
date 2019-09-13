@@ -8,14 +8,13 @@ import com.autostar.tnca.pages.Master_Page;
 
 public class Master_Test extends SeleniumBase {
 	
-	public static Master_Page initPageElements;
+	//public static Master_Page initPageElements;
 
 	@Test
-	public void verifyDateAndTime() {
+	public void verifyDateAndTime() throws InterruptedException {
 		
-		initPageElements=new Master_Page();
-		initPageElements.verifyDateTime();
-	
+	new Login_Page().login().verifyServerDate();
+			
 	}
 	
 }

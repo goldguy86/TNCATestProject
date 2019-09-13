@@ -9,9 +9,9 @@ import com.autostar.selenium.api.base.SeleniumBase;
 
 public class Login_Page extends SeleniumBase {
 
-	public Login_Page() {
-		
-		System.out.println("Constructor called");		
+	public Login_Page() 
+	{
+				
 		PageFactory.initElements(driver, this);
 	
 	}
@@ -21,12 +21,11 @@ public class Login_Page extends SeleniumBase {
 	@FindBy(xpath="//input[@type='submit']")	WebElement Submit;
 	@FindBy(xpath="//p[@id='error']")	WebElement errorMessage;	
 
-	public Master_Page login() {
+	public Master_Page login(){
 		
-		EnterText(UserName, "Bdmin");
+		EnterText(UserName, "Admin");
 		EnterText(Password, "password1");
 		click(Submit);
-		System.out.println("After Sumbit");
 		return new Master_Page();
 
 	}
